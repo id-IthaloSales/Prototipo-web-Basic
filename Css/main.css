@@ -1,0 +1,95 @@
+main .container-recomendado{
+    display:inline-flex;
+    align-items:center;
+    }
+
+.container-pesquisar {
+    position: relative;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+  }
+
+.container-principal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.container-telaAdcionar{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+  .container{               /* Ajusta o container */
+    position: relative;
+    display:inline-block;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-left: 10px;
+    align-items: left;
+    justify-content: left;
+  }
+  .container-margin{
+    margin-top: 50px;
+  }
+  
+ 
+  input[type="text"] {
+    padding-right: 30px;
+  }
+  
+  .btpesquisar {
+    position: center;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color:transparent;
+    color:white;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-adcionar{
+    background-color: #9f0202; /* Define a cor de fundo vermelha */
+    color: #ffffff; /* Define a cor do texto como branco */
+    border: none; /* Remove a borda */
+    padding: 10px 20px; /* Adapte o preenchimento conforme necessário */
+    font-size: 16px; /* Adapte o tamanho da fonte conforme necessário */
+    border-radius: 5px;
+  }
+
+  .bloco-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+  }
+
+  .bloco-list > section {
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+  }
+  .bloco-listplat{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+
+  }
+  .bloco-recomendado > section {
+    margin-top: 100px;
+    margin-right: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 300px;
+    width: 250px;
+    text-align: center;
+  }
+  p{
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: small;
+ }
+ h1{
+    font-size: 3ex;
+ }

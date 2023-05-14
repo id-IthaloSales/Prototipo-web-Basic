@@ -1,0 +1,50 @@
+div img{
+    width: 200px;
+    height: 200px;
+     
+    margin-bottom: 6%;
+    border: 1px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+ }
+ .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .menu {
+    
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .menu ul li.menuEntrarSair {
+        float: right;
+    }   
+ 
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu ul li {
+    display: inline-block;
+  }
+
+  .menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .menu ul li a:hover {
+    background-color: #3c34ae;
+  }
