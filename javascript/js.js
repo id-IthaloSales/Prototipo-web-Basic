@@ -4,7 +4,6 @@ Ao clicar nos botões, as listas correspondentes serão alternadas entre visíve
 Você pode adicionar mais botões e listas seguindo o mesmo padrão, atribuindo IDs únicos aos botões e às listas e chamando a função toggleLista() corretamente. Além disso, você pode personalizar o estilo das listas e dos botões de acordo com suas necessidades.
 Regenerate response */
 
-
 function toggleLista(idLista) {
     var lista = document.getElementById(idLista);
 
@@ -16,3 +15,17 @@ function toggleLista(idLista) {
         lista.style.display = "none";
     }
 }
+
+/*função tela operplay */
+var openLoginBtn = document.getElementById('open-login-btn');
+var loginOverlay = document.getElementById('login-overlay');
+
+openLoginBtn.addEventListener('click', function() {
+  loginOverlay.style.display = 'block';
+});
+
+loginOverlay.addEventListener('click', function(e) {
+  if (e.target === loginOverlay) {
+    loginOverlay.style.display = 'none';
+  }
+});

@@ -12,9 +12,38 @@
     <link rel="stylesheet" href="./Css/response.css">
     <!--Icons-->
     <script src="https://kit.fontawesome.com/d1288213de.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!--JavaScript-->
+    <script src="./javascript/js.js"></script>
     <title>Stream List</title>
 </head>
 <body>
+    <!--codigo para abertura da tela loguin-->
+    <div id="login-overlay">
+        <div id="login-box">
+          <h2>Login</h2>
+          <form id="login-form">
+            <input type="text" id="username" placeholder="Nome de usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <a href="#">Esqueceu sua senha?</a><br>
+            <button type="submit">Entrar</button>
+
+          </form>
+          <div class="bttncadastro">
+            <a href="#">NÃO POSSUI UMA CONTA? CADASTRE-SE</a><br>
+            <button class="google-btn">
+                <span class="icon"><i class="fab fa-google"></i></span>
+                <span class="text"> Google</span>
+              </button><br>
+              <button class="facebook-btn">
+                <span class="icon"><i class="fab fa-facebook"></i></span>
+                <span class="text">Facebook</span>
+              </button>
+        </div>          
+
+        </div>
+      </div>
+      <!--Incio do body-->
     <header class="header">
         <div class="logo">
             <img src="./imagens/logo.jpeg" alt="Logomarca">
@@ -23,13 +52,12 @@
             <ul>
                 <li><a href="#">INICIO</a></li>
                 <li><a href="#">GÊNEROS</a></li>
-                <li><a href="#">FAVORITOS</a></li>
+                <li><a href="./favoritos.html">FAVORITOS</a></li>
                 <li><a href="#">PLATAFORMAS</a></li>
                 <li class="menuEntrarSair">
-                    <a href="#" target="_blank">
-                        <i class="fa-regular fa-right-to-bracket"></i>
-                        ENTRAR
-                    </a>
+                    <a href="#">
+                        <i id="open-login-btn" class="fa-regular fa-right-to-bracket"> Entrar</i>
+                    </a>                   
                 </li>
             </ul>
         </nav>
@@ -285,5 +313,6 @@
             &copy; StreamList, 2023 - Todos os direitos reservados.
         </span>
     </Footer>
+    <script src="./javascript/js.js"></script>
 </body>
 </html>

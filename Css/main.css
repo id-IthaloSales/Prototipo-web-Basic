@@ -81,6 +81,7 @@ main .container-recomendado{
     width: 250px;
     text-align: center;
   }
+
   p{
     font-weight: 300;
     line-height: 1.6;
@@ -210,6 +211,19 @@ column-count: 4; /* Número de colunas */
 .lista a{
   font-size: 12px;
 }
-.conteiner-bttplataforma{
+/*.conteiner-bttplataforma{
 
+}*/
+.box-resultado{
+  width: 300px;
+  height: 1000px;
+  
+  border:5px;
+}
+
+/*Css tela de cadastro*/
+
+label, input {
+  display: block;
+  margin-bottom: 2%;
 }
