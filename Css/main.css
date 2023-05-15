@@ -16,11 +16,8 @@ main .container-recomendado{
     grid-template-columns: repeat(2, 1fr);
     
 }
-.container-telaAdcionar{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-  .container{               /* Ajusta o container */
+
+.container{               /* Ajusta o container */
     position: relative;
     display:inline-block;
     margin-right: 50px;
@@ -33,7 +30,6 @@ main .container-recomendado{
     margin-top: 50px;
   }
   
- 
   input[type="text"] {
     padding-right: 30px;
   }
@@ -93,3 +89,127 @@ main .container-recomendado{
  h1{
     font-size: 3ex;
  }
+
+ /*Codigos css especificos da pagina TelaSerie*/
+ .container-telaserie{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin:auto;
+}
+ .container-gridcaract{
+  text-align: left;
+  color: rgb(255, 255, 255);
+
+ }
+ .container-gridcaract p {
+  font-size: 10px;
+  display: inline-block;
+
+  margin-left: 7%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+
+  color: #605858;
+ }
+
+ .container-telaserie h1{
+  text-align: left;
+  margin-left: 7%;
+  margin-bottom: 2%;
+ }
+ .container-gridcaract h4, h5{
+  margin-left: 7%;
+}
+ .container-gridcaract > section{
+    width: 200px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border:5px;
+
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+    text-align: center;  
+    margin-left: 7%;  
+ }
+
+.container-trailer{
+  width: 600px;
+  height: 300px;
+  background-color: #000000;
+  border:5px;
+  color: transparent;
+}
+
+/*.container-gridtrailer{
+
+}*/
+
+.container-gridopcoes{
+  width: 300px;
+  height: 300px;
+  background-color: #240cb0;
+  border:5px;
+
+  margin-bottom: 6%;
+  margin-left: 20%;
+  display: inline-block;
+}
+
+.container-relacionados{
+  margin-top: 10%;
+
+}
+.bloco-listRelacionados > section{
+  display: inline-block;
+  margin:2%;
+
+  width: 150px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border:5px;
+}
+ 
+ /*Codigos css especificos da pagina TelaSerie*/
+
+ .container-filterpesquisar{
+    display:inline-flex;
+    gap: 10px;
+
+    margin: 10%;
+ }
+ .conteiner-bttgenero{
+  margin-bottom: 6%;
+
+ }
+ /* Estilo para o botão */
+ .botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilo para a lista */
+.lista {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+
+column-count: 4; /* Número de colunas */
+  column-width: 150px; /* Largura das colunas */
+}
+
+.lista li {
+  margin-bottom: 10px;
+}
+.lista a{
+  font-size: 12px;
+}
+.conteiner-bttplataforma{
+
+}

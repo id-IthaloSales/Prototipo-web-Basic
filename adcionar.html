@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--CSS-->
-        <link rel="stylesheet" href="./Css/reset.css">
-        <link rel="stylesheet" href="./Css/header.css">    
-        <link rel="stylesheet" href="./Css/footer.css">
-        <link rel="stylesheet" href="./Css/main.css">
-        <link rel="stylesheet" href="./Css/response.css">
-        <!--Icons-->
-        <script src="https://kit.fontawesome.com/d1288213de.js" crossorigin="anonymous" defer></script>
-        
+    <!--CSS-->
+    <link rel="stylesheet" href="./Css/reset.css">
+    <link rel="stylesheet" href="./Css/header.css">
+    <link rel="stylesheet" href="./Css/footer.css">
+    <link rel="stylesheet" href="./Css/main.css">
+    <link rel="stylesheet" href="./Css/response.css">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/d1288213de.js" crossorigin="anonymous" defer></script>
+
     <title>TelaSerie</title>
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
@@ -22,7 +24,7 @@
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="#">INICIO</a></li>
+                <li><a href="./index.html">INICIO</a></li>
                 <li><a href="#">GÊNEROS</a></li>
                 <li><a href="#">FAVORITOS</a></li>
                 <li><a href="#">PLATAFORMAS</a></li>
@@ -33,32 +35,107 @@
                     </a>
                 </li>
                 <section class="container-pesquisar">
-                    <form >
+                    <form>
                         <div class="form-pesquisa">
-                          <input type="text" name="pesquisar" placeholder="Pesquisar">
-                          <button type="submit" class="btpesquisar"><i class="fas fa-search"></i></button>
+                            <input type="text" name="pesquisar" placeholder="Pesquisar">
+                            <button type="submit" class="btpesquisar"><i class="fas fa-search"></i></button>
                         </div>
-                    </form>                                       
+                    </form>
                 </section>
             </ul>
         </nav>
-        
+
     </header>
     <main>
-        <section class="container-telaAdcionar">
-            <section class="container-caract">
+        <section class="container-telaserie">
+            <section class="container-gridcaract">
+                <section>
+                    <h1 style="color: black;text-align: center;">LOGO DA SÉRIE</h1>
+                </section>
+                <h1>TITULO SÉRIE</h1>
+                <p class="genero">Genêro</p>
+                <p class="tempo">🎞️Tempo</p>
+                <p class="ano">📆Ano</p>
+                </br>
+                <h4>Diretor</h4>
+                <p>Diretores</p>
+                </br>
+                <h4>Elenco</h4>
+                <p>Elenco</p>
+                </br>
+                <h5>Temporadas</h5>
+                <p>X</p>
+                <h5>Episodios</h5>
+                <p>Y</p>
 
             </section>
-            <section class="container-trailer">
-
+            <section class="container-gridtrailer">
+                <section class="container-trailer">
+                    <h1 style="color: aqua;">Trailler</h1>
+                </section>
+                <h1>Sinopse</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitationLorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation</p>
             </section>
-            <section class="container-opcoes">
 
+            <section class="container-gridopcoes">
+                <section class="container-gridopcoes">
+                    <h1 style="text-align: center;">ONDE ASSISTIR</h1>
+                    </br>
+                    <a href="#"><img src="./imagens/icons_Plataformas/netflix.jpg" alt="Netflix"></a>
+                    <a href="#"><img src="./imagens/icons_Plataformas/AmazonPrime.jpg" alt="Amazon"></a>
+                    <a href="#"><img src="./imagens/icons_Plataformas/GloboPlay.jpg" alt="GloboPlay"></a>
+                    <a href="#"><img src="./imagens/icons_Plataformas/Starplus.jpg" alt="Starplus"></a>
+                </section>
             </section>
 
         </section>
+        <br>
+        <section class="container-relacionados">
+            <h1>Relacionados</h1>
+            <section class="bloco-listRelacionados">
+                <section>
+                    <img src="#" alt="Imagem 1">
+                </section>
+                <section>
+                    <img src="#" alt="Imagem 2">
+                </section>
+                <section>
+                    <img src="#" alt="Imagem 3">
+                </section>
+                <section>
+                    <img src="#" alt="Imagem 4">
+                </section>
+                <section>
+                    <img src="#" alt="Imagem 5">
+                </section>
+                <section>
+                    <img src="#" alt="Imagem 6">
+                </section>
+            </section>
+        </section>
 
     </main>
-    <footer></footer>  
+    <Footer>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">GÊNEROS</a></li>
+                <li><a href="#">FAVORITOS</a></li>
+                <li><a href="#">PLATAFORMAS</a></li>
+                <li><a href="#">PERFIL</a></li>
+            </ul>
+        </nav>
+        <br>
+        <span>
+            &copy; StreamList, 2023 - Todos os direitos reservados.
+        </span>
+    </Footer>
 </body>
+
 </html>

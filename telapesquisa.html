@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="./Css/reset.css">
+    <link rel="stylesheet" href="./Css/header.css">
+    <link rel="stylesheet" href="./Css/footer.css">
+    <link rel="stylesheet" href="./Css/main.css">
+    <link rel="stylesheet" href="./Css/response.css">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/d1288213de.js" crossorigin="anonymous" defer></script>
+    <!--JavaScript-->
+    <script src="./javascript/js.js"></script>
+    <title>Tela de pesquisa</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./imagens/logo.jpeg" alt="Logomarca">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="#">GÊNEROS</a></li>
+                <li><a href="#">FAVORITOS</a></li>
+                <li><a href="#">PLATAFORMAS</a></li>
+                <li class="menuEntrarSair">
+                    <a href="#" target="_blank">
+                        <i class="fa-regular fa-right-to-bracket"></i>
+                        ENTRAR
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section class="container-pesquisar">
+            <form>
+                <div class="form-pesquisa">
+                    <input type="text" name="pesquisar" placeholder="Pesquisar">
+                    <button type="submit" class="btpesquisar"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+        </section>
+        <section class="container-filterpesquisar">
+            <section class="conteiner-bttplataforma">
+                <button class="botao" onclick="toggleLista('listplataforma')">PLATAFORMA</button>
+                <ul id="listplataforma" class="lista">
+                    <li><a href="#"><img src="./imagens/icons_Plataformas/netflix.jpg" alt="Netflix"></a></li>
+                    <li><a href="#"><img src="./imagens/icons_Plataformas/AmazonPrime.jpg" alt="Amazon"></a></li>
+                    <li><a href="#"><img src="./imagens/icons_Plataformas/GloboPlay.jpg" alt="GloboPlay"></a></li>
+                    <li><a href="#"><img src="./imagens/icons_Plataformas/Starplus.jpg" alt="Starplus"></a></li>
+                    <li><a href="#"><img src="./imagens/icons_Plataformas/AppleTV.jpg" alt="AppleTV"></a></li>
+                    <li><a href="#"><img src="./imagens/icons_Plataformas/Disney.jpg" alt="Disney"></a></li>
+                    <li><a href="#"><img src="./imagens/icons_Plataformas/HboMax.jpg" alt="HboMax"></a></li>
+                    <li><a href="#"><img src="./imagens/icons_Plataformas/Crunchroll.jpg" alt="Crunchroll"></a></li>
+                </ul>
+            </section>
+            <section class="conteiner-bttgenero">
+                <button class="botao" onclick="toggleLista('listgenero')">GÊNERO</button>
+                <ul id="listgenero" class="lista">
+                    <li><a href="#">Ação</a></li>
+                    <li><a href="#">Animação</a></li>
+                    <li><a href="#">Aventura</a></li>
+                    <li><a href="#">Biografia</a></li>
+                    <li><a href="#">comédia</a></li>
+                    <li><a href="#">Crime</a></li>
+                    <li><a href="#">Documentário</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Esporte</a></li>
+                    <li><a href="#">Família</a></li>
+                    <li><a href="#">Fantasia</a></li>
+                    <li><a href="#">Faroeste</a></li>
+                    <li><a href="#">Ficção científica</a></li>
+                    <li><a href="#">Guerra</a></li>
+                    <li><a href="#">História</a></li>
+                    <li><a href="#">Mistério</a></li>
+                    <li><a href="#">Música</a></li>
+                    <li><a href="#">Musical</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Show</a></li>
+                    <li><a href="#">Terror</a></li>
+                    <li><a href="#">Thriller</a></li>    
+
+                </ul>
+            </section>
+        </section>
+        <section class="container-resultadofilter">
+            <h1>Nome da PLATAFORMA OU GÊNERO</h1>
+            <section class="box-resultado">
+
+            </section>
+
+        </section>
+    </main>
+    <Footer>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">GÊNEROS</a></li>
+                <li><a href="#">FAVORITOS</a></li>
+                <li><a href="#">PLATAFORMAS</a></li>
+                <li><a href="#">PERFIL</a></li>
+            </ul>
+        </nav>
+        <br>
+        <span>
+            &copy; StreamList, 2023 - Todos os direitos reservados.
+        </span>
+    </Footer>
+</body>
+
+</html>
