@@ -15,6 +15,12 @@ main .container-recomendado {
   
 }
 .btxbusca {
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   background-color: transparent;
   color: white;
   border: none;
@@ -33,8 +39,9 @@ main .container-recomendado {
   border-radius: 15px;
   height: 45PX;
   width: 360px;
+
   cursor: pointer;
-  margin-left: 45%;
+  margin:auto;
   margin-bottom: 5%;
 }
 
@@ -131,7 +138,8 @@ h1 {
 .container-telaserie {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: auto;
+  grid-gap:5%;
+   
 }
 
 .container-gridcaract {
@@ -188,8 +196,12 @@ h5 {
   height: 300px;
   background-color: #240cb0;
   border: 5px;
+  
+  text-align: center;  
+}
+.container-gridopcoes h1{
   text-align: center;
-  margin-left: 20%;
+  align-items: center;
 }
 
 .conteiner-btt {
@@ -274,12 +286,13 @@ input {
   margin-bottom: 2%;
 }
 
-#bttcadastrar {}
+/*#bttcadastrar {}*/
 
 /*icons de curtir*/
 .conteiner-btt {
-  display: inline-flex;
-  margin-left: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
   text-align: center;
 }
 
@@ -301,6 +314,24 @@ input {
   cursor: pointer;
 }
 
-.btt-adcionar {
+#btt-adcionar {
+  margin-left: 10px;
   text-align: center;
-}
+  background-color: #a34949
+  
+ }
+ #bttloguin{
+  background-color: #0078E8;
+  color: #fff;
+ }
+ #bttcategorizar{
+  background-color: #0078E8;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: 25px;
+  text-align: center;
+ }
+ .conteiner-gridcategorizar{
+  display:flow-root;
+
+ }
