@@ -14,8 +14,10 @@
     <!--Icons-->
     <script src="https://kit.fontawesome.com/d1288213de.js" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    
     <!--JavaScript-->
     <script src="./javascript/js.js"></script>
+    <script src="script.js"></script>
     <title>Tela Serie</title>
 </head>
 
@@ -65,6 +67,14 @@
         </nav>
     </header>
     <main>
+        <section class="container-pesquisar">
+            <form>
+                <div class="form-pesquisa">
+                    <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
+                    <button type="submit" class="btxbusca"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+        </section>
         <section class="container-telaserie">
             <section class="container-gridcaract">
                 <section>
@@ -85,7 +95,6 @@
                 <p>X</p>
                 <h5>Episodios</h5>
                 <p>Y</p>
-
             </section>
             <section class="container-gridtrailer">
                 <section class="container-trailer">
@@ -99,19 +108,29 @@
                     adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad
                     minim veniam, quis nostrud exercitation</p>
-            </section>
-
-            <section class="container-gridopcoes">
+            </section>                       
+            <section >
+                <section class="conteiner-btt">
+                    <div><i class="far fa-heart heart"></i></div> 
+                    <div><i class="far fa-thumbs-up style"></i></div>                   
+                    <div><i class="far fa-thumbs-down style"></i></div>
+                    <button classe="btt-adcionar">Adcionar</button> 
+                    <script>
+                        const heart = document.querySelector(".heart");
+                    
+                        heart.addEventListener('click', function() {
+                          this.classList.toggle('active');
+                        });
+                      </script>              
+                </section >                           
                 <section class="container-gridopcoes">
-                    <h1 style="text-align: center;">ONDE ASSISTIR</h1>
-                    </br>
+                    <h1>ONDE ASSISTIR</h1> 
                     <a href="#"><img src="./imagens/icons_Plataformas/netflix.jpg" alt="Netflix"></a>
                     <a href="#"><img src="./imagens/icons_Plataformas/AmazonPrime.jpg" alt="Amazon"></a>
                     <a href="#"><img src="./imagens/icons_Plataformas/GloboPlay.jpg" alt="GloboPlay"></a>
                     <a href="#"><img src="./imagens/icons_Plataformas/Starplus.jpg" alt="Starplus"></a>
                 </section>
-            </section>
-
+            </section>            
         </section>
         <br>
         <section class="container-relacionados">
@@ -142,10 +161,10 @@
     <Footer>
         <nav class="menu">
             <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">GÊNEROS</a></li>
-                <li><a href="#">FAVORITOS</a></li>
-                <li><a href="#">PLATAFORMAS</a></li>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./telapesquisa.html">GÊNEROS</a></li>
+                <li><a href="./favoritos.html">FAVORITOS</a></li>
+                <li><a href="./telapesquisa.html">PLATAFORMAS</a></li>
                 <li><a href="#">PERFIL</a></li>
             </ul>
         </nav>
@@ -155,7 +174,7 @@
         <span>
             &copy; StreamList, 2023 - Todos os direitos reservados.
         </span>
-        
+
     </Footer>
     <script src="./javascript/js.js"></script>
 </body>

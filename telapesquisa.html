@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./Css/response.css">
     <!--Icons-->
     <script src="https://kit.fontawesome.com/d1288213de.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <!--JavaScript-->
     <script src="./javascript/js.js"></script>
     <title>Tela de pesquisa</title>
@@ -32,7 +33,7 @@
 
                 </form>
                 <div class="bttncadastro">
-                    <a href="#">NÃO POSSUI UMA CONTA? CADASTRE-SE</a><br>
+                    <a href="./telacadastro.html">NÃO POSSUI UMA CONTA? CADASTRE-SE</a><br>
                     <button class="google-btn">
                         <span class="icon"><i class="fab fa-google"></i></span>
                         <span class="text"> Google</span>
@@ -56,9 +57,8 @@
                 <li><a href="./favoritos.html">FAVORITOS</a></li>
                 <li><a href="./telapesquisa.html">PLATAFORMAS</a></li>
                 <li class="menuEntrarSair">
-                    <a href="#" target="_blank">
-                        <i class="fa-regular fa-right-to-bracket"></i>
-                        ENTRAR
+                    <a href="#">
+                        <i id="open-login-btn" class="fa-regular fa-right-to-bracket"> Entrar</i>
                     </a>
                 </li>
             </ul>
@@ -69,8 +69,8 @@
         <section class="container-pesquisar">
             <form>
                 <div class="form-pesquisa">
-                    <input type="text" name="pesquisar" placeholder="Pesquisar">
-                    <button type="submit" class="btpesquisar"><i class="fas fa-search"></i></button>
+                    <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
+                    <button type="submit" class="btxbusca"><i class="fas fa-search"></i></button>
                 </div>
             </form>
         </section>
@@ -148,10 +148,10 @@
     <Footer>
         <nav class="menu">
             <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">GÊNEROS</a></li>
-                <li><a href="#">FAVORITOS</a></li>
-                <li><a href="#">PLATAFORMAS</a></li>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./telapesquisa.html">GÊNEROS</a></li>
+                <li><a href="./favoritos.html">FAVORITOS</a></li>
+                <li><a href="./telapesquisa.html">PLATAFORMAS</a></li>
                 <li><a href="#">PERFIL</a></li>
             </ul>
         </nav>
@@ -161,7 +161,7 @@
         <span>
             &copy; StreamList, 2023 - Todos os direitos reservados.
         </span>
-        
+
     </Footer>
     <script src="./javascript/js.js"></script>
 </body>

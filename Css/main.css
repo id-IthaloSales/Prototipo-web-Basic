@@ -1,108 +1,146 @@
-main .container-recomendado{
-    display:inline-flex;
-    align-items:center;
-    }
+main .container-recomendado {
+  display: inline-flex;
+  align-items: center;
+}
+
+.form-pesquisar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  position: relative;
+  top: 0;
+  right: 0;
+  
+}
+.btxbusca {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;  
+}
 
 .container-pesquisar {
-    display: flex;
-    
-    align-items: center;
-    justify-content: center;
-  }
 
-.container-principal{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: #007bff;
+  border: #007bff;
+  border-radius: 15px;
+  height: 45PX;
+  width: 360px;
+  cursor: pointer;
+  margin-left: 45%;
+  margin-bottom: 5%;
 }
 
-.container{               /* Ajusta o container */
-    position: relative;
-    display:inline-block;
-    margin-right: 50px;
-    margin-top: 50px;
-    margin-left: 10px;
-    align-items: left;
-    justify-content: left;
-  }
-  .container-margin{
-    margin-top: 50px;
-  }
-  
-  input[type="text"] {
-    padding-right: 30px;
-  }
-  
-  .btpesquisar {
-    position: center;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    background-color:transparent;
-    color:white;
-    border: none;
-    cursor: pointer;
-  }
-  .btn-adcionar{
-    background-color: #9f0202; /* Define a cor de fundo vermelha */
-    color: #ffffff; /* Define a cor do texto como branco */
-    border: none; /* Remove a borda */
-    padding: 10px 20px; /* Adapte o preenchimento conforme necessário */
-    font-size: 16px; /* Adapte o tamanho da fonte conforme necessário */
-    border-radius: 5px;
-  }
+#txtBusca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .bloco-list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 50px;
-  }
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  height: 30px;
+  width: 260px;
+}
 
-  .bloco-list > section {
-    background-color: #f2f2f2;
-    padding: 20px;
-    height: 100px;
-    width: 100px;
-    text-align: center;
-  }
-  .bloco-listplat{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+.container-principal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
-  }
-  .bloco-recomendado > section {
-    margin-top: 100px;
-    margin-right: 10px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    height: 300px;
-    width: 250px;
-    text-align: center;
-  }
+.container { /* Ajusta o container */
+ 
+  position: relative;
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-left: 10px;
+  align-items: left;
+  justify-content: left;
+}
 
-  p{
-    font-weight: 300;
-    line-height: 1.6;
-    font-size: small;
- }
- h1{
-    font-size: 3ex;
- }
+.container-margin {
+  margin-top: 50px;
+}
 
- /*Codigos css especificos da pagina TelaSerie*/
- .container-telaserie{
+input[type="text"] {
+  padding-right: 30px;
+}
+
+.btn-adcionar {
+  background-color: #9f0202;/* Define a cor de fundo vermelha */
+  color: #ffffff; /* Define a cor do texto como branco */
+  border: none; /* Remove a borda */
+  padding: 10px 20px;/* Adapte o preenchimento conforme necessário */
+  font-size: 16px;/* Adapte o tamanho da fonte conforme necessário */
+  border-radius: 5px;
+}
+
+.bloco-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+}
+
+.bloco-list>section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.bloco-listplat {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+
+}
+
+.bloco-recomendado>section {
+  margin-top: 100px;
+  margin-right: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 300px;
+  width: 250px;
+  text-align: center;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: small;
+}
+
+h1 {
+  font-size: 3ex;
+}
+
+/*Codigos css especificos da pagina TelaSerie*/
+.container-telaserie {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
-  margin:auto;
+  margin: auto;
 }
- .container-gridcaract{
+
+.container-gridcaract {
   text-align: left;
   color: rgb(255, 255, 255);
 
- }
- .container-gridcaract p {
+}
+
+.container-gridcaract p {
   font-size: 10px;
   display: inline-block;
 
@@ -111,80 +149,84 @@ main .container-recomendado{
   margin-bottom: 2%;
 
   color: #292222;
- }
+}
 
- .container-telaserie h1{
+.container-telaserie h1 {
   text-align: left;
   margin-left: 7%;
   margin-bottom: 2%;
- }
- .container-gridcaract h4, h5{
+}
+
+.container-gridcaract h4,
+h5 {
   margin-left: 7%;
 }
- .container-gridcaract > section{
-    width: 200px;
-    height: 200px;
-    background-color: #f2f2f2;
-    border:5px;
 
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
+.container-gridcaract>section {
+  width: 200px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border: 5px;
 
-    text-align: center;  
-    margin-left: 7%;  
- }
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 
-.container-trailer{
+  text-align: center;
+  margin-left: 7%;
+}
+
+.container-trailer {
   width: 600px;
   height: 300px;
   background-color: #000000;
-  border:5px;
+  border: 5px;
   color: transparent;
 }
 
-/*.container-gridtrailer{
-
-}*/
-
-.container-gridopcoes{
+.container-gridopcoes {
   width: 300px;
   height: 300px;
   background-color: #240cb0;
-  border:5px;
-
-  margin-bottom: 6%;
+  border: 5px;
+  text-align: center;
   margin-left: 20%;
-  display: inline-block;
 }
 
-.container-relacionados{
+.conteiner-btt {
+  text-align: center;
+  margin-left: 10%;
+}
+
+.container-relacionados {
   margin-top: 10%;
 
 }
-.bloco-listRelacionados > section{
+
+.bloco-listRelacionados>section {
   display: inline-block;
-  margin:2%;
+  margin: 2%;
 
   width: 150px;
   height: 200px;
   background-color: #f2f2f2;
-  border:5px;
+  border: 5px;
 }
- 
- /*Codigos css especificos da pagina TelaSerie*/
 
- .container-filterpesquisar{
-    display:inline-flex;
-    gap: 10px;
+/*Codigos css especificos da pagina TelaSerie*/
 
-    margin: 10%;
- }
- .conteiner-bttgenero{
+.container-filterpesquisar {
+  display: inline-flex;
+  gap: 10px;
+  margin: auto;
+}
+
+.conteiner-bttgenero {
   margin-bottom: 6%;
 
- }
- /* Estilo para o botão */
- .botao {
+}
+
+/* Estilo para o botão */
+.botao {
   display: inline-block;
   padding: 10px 20px;
   background-color: #007bff;
@@ -199,33 +241,66 @@ main .container-recomendado{
   display: none;
   list-style-type: none;
   padding: 0;
+  column-count: 4;
+  /* Número de colunas */
+  column-width: 150px;
+  /* Largura das colunas */
 
-column-count: 4; /* Número de colunas */
-  column-width: 150px; /* Largura das colunas */
 }
 
 .lista li {
   margin-bottom: 10px;
 }
-.lista a{
+
+.lista a {
   font-size: 12px;
 }
+
 /*.conteiner-bttplataforma{
 
 }*/
-.box-resultado{
+.box-resultado {
   width: 300px;
   height: 1000px;
-  
-  border:5px;
+
+  border: 5px;
 }
 
 /*Css tela de cadastro*/
 
-label, input {
+label,
+input {
   display: block;
   margin-bottom: 2%;
 }
-#bttcadastrar{
-  
+
+#bttcadastrar {}
+
+/*icons de curtir*/
+.conteiner-btt {
+  display: inline-flex;
+  margin-left: 50%;
+  text-align: center;
+}
+
+.heart {
+  font-size: 35px;
+  color: #000;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.heart .active {
+  color: red;
+}
+
+.style {
+  font-size: 35px;
+  color: #000;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.btt-adcionar {
+  text-align: center;
 }
