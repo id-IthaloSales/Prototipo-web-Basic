@@ -4,7 +4,6 @@ main .container-recomendado{
     }
 
 .container-pesquisar {
-    position: relative;
     display: flex;
     
     align-items: center;

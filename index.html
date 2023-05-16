@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
     <link rel="stylesheet" href="./Css/reset.css">
-    <link rel="stylesheet" href="./Css/header.css">    
+    <link rel="stylesheet" href="./Css/header.css">
     <link rel="stylesheet" href="./Css/footer.css">
     <link rel="stylesheet" href="./Css/main.css">
     <link rel="stylesheet" href="./Css/response.css">
@@ -17,65 +18,66 @@
     <script src="./javascript/js.js"></script>
     <title>Stream List</title>
 </head>
+
 <body>
     <!--codigo para abertura da tela loguin-->
     <div id="login-overlay">
         <div id="login-box">
-          <h2>Login</h2>
-          <form id="login-form">
-            <input type="text" id="username" placeholder="Nome de usuário" required>
-            <input type="password" id="password" placeholder="Senha" required>
-            <a href="#">Esqueceu sua senha?</a><br>
-            <button type="submit">Entrar</button>
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Nome de usuário" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <a href="#">Esqueceu sua senha?</a><br>
+                <button type="submit">Entrar</button>
 
-          </form>
-          <div class="bttncadastro">
-            <a href="#">NÃO POSSUI UMA CONTA? CADASTRE-SE</a><br>
-            <button class="google-btn">
-                <span class="icon"><i class="fab fa-google"></i></span>
-                <span class="text"> Google</span>
-              </button><br>
-              <button class="facebook-btn">
-                <span class="icon"><i class="fab fa-facebook"></i></span>
-                <span class="text">Facebook</span>
-              </button>
-        </div>          
+            </form>
+            <div class="bttncadastro">
+                <a href="#">NÃO POSSUI UMA CONTA? CADASTRE-SE</a><br>
+                <button class="google-btn">
+                    <span class="icon"><i class="fab fa-google"></i></span>
+                    <span class="text"> Google</span>
+                </button><br>
+                <button class="facebook-btn">
+                    <span class="icon"><i class="fab fa-facebook"></i></span>
+                    <span class="text">Facebook</span>
+                </button>
+            </div>
 
         </div>
-      </div>
-      <!--Incio do body-->
+    </div>
+    <!--Incio do body-->
     <header class="header">
         <div class="logo">
             <img src="./imagens/logo.png" alt="Logomarca">
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">GÊNEROS</a></li>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./telapesquisa.html">GÊNEROS</a></li>
                 <li><a href="./favoritos.html">FAVORITOS</a></li>
-                <li><a href="#">PLATAFORMAS</a></li>
+                <li><a href="./telapesquisa.html">PLATAFORMAS</a></li>
                 <li class="menuEntrarSair">
                     <a href="#">
                         <i id="open-login-btn" class="fa-regular fa-right-to-bracket"> Entrar</i>
-                    </a>                   
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="container-pesquisar">
-            <form >
+            <form>
                 <div class="form-pesquisa">
-                  <input type="text" name="pesquisar" placeholder="Pesquisar">
-                  <button type="submit" class="btpesquisar"><i class="fas fa-search"></i></button>
+                    <input type="text" name="pesquisar" placeholder="Pesquisar">
+                    <button type="submit" class="btpesquisar"><i class="fas fa-search"></i></button>
                 </div>
             </form>
-                           
+
         </section>
         <section class="container-principal">
             <section class="container">
                 <section class="container-minhalista, container-margin">
-                    <h1>Minha Lista</h1>            
+                    <h1>Minha Lista</h1>
                     <a href="./adcionar.html" target="_blank" class="bt_vermais">Ver mais</a>
                     <section class="bloco-list">
                         <section>
@@ -99,7 +101,7 @@
                     </section>
                 </section>
                 <section class="container-lancamento, container-margin">
-                    <h1>Lançamentos</h1>            
+                    <h1>Lançamentos</h1>
                     <a href="./adcionar.html" target="_blank" class="bt_vermais">Ver mais</a>
                     <section class="bloco-list">
                         <section>
@@ -120,11 +122,11 @@
                         <section>
                             <img src="#" alt="Imagem 6">
                         </section>
-                        
+
                     </section>
                 </section>
                 <section class="container-porplat, container-margin">
-                    <h1>Encontre séries por plataforma</h1>            
+                    <h1>Encontre séries por plataforma</h1>
                     <a href="./adcionar.html" target="_blank" class="bt_vermais">Ver mais</a>
                     <section class="bloco-listplat">
                         <section>
@@ -154,7 +156,7 @@
                     </section>
                 </section>
                 <section class="container-porgenero, container-margin">
-                    <h1>Encontre séries por gênero</h1>            
+                    <h1>Encontre séries por gênero</h1>
                     <a href="./adcionar.html" target="_blank" class="bt_vermais">Ver mais</a>
                     <section class="bloco-list">
                         <section>
@@ -174,11 +176,11 @@
                         </section>
                         <section>
                             <img src="#" alt="Imagem 6">
-                        </section>                        
-                    </section>                    
+                        </section>
+                    </section>
                 </section>
                 <section class="container-favoritos, container-margin">
-                    <h1>Favoritos</h1>            
+                    <h1>Favoritos</h1>
                     <a href="./adcionar.html" target="_blank" class="bt_vermais">Ver mais</a>
                     <section class="bloco-list">
                         <section>
@@ -198,11 +200,11 @@
                         </section>
                         <section>
                             <img src="#" alt="Imagem 6">
-                        </section>                        
+                        </section>
                     </section>
 
                 </section>
-            </br>
+                </br>
             </section>
             <section class="container-margin">
                 <h1>Recomendados</h1>
@@ -210,91 +212,91 @@
                     <div class="bloco-recomendado">
                         <section>
                             <img src="#" alt="Imagem 1">
-                        </section>                  
+                        </section>
                     </div>
                     <section class="bloco_recomendado_sinopse">
                         <h1>Nome da série</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam, quis nostrud exercitation</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation</p>
                         <p>Genêro</p>
-                        <p>Tempo</p>  
-                        <p>Ano</p>   
-                        <p>Diretores</p>  
+                        <p>Tempo</p>
+                        <p>Ano</p>
+                        <p>Diretores</p>
                         <p>Elenco</p>
-                        <p>TEmporadas   X    Episodios Y</p>
+                        <p>TEmporadas X Episodios Y</p>
                         <br>
                         <button class="btn-adcionar">Adicionar à Lista</button>
-                    </section>            
+                    </section>
                 </section>
                 <section class="container-recomendado">
                     <div class="bloco-recomendado">
                         <section>
                             <img src="#" alt="Imagem 1">
-                        </section>                  
+                        </section>
                     </div>
                     <section class="bloco_recomendado_sinopse">
                         <h1>Nome da série</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam, quis nostrud exercitation</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation</p>
                         <p>Genêro</p>
-                        <p>Tempo</p>  
-                        <p>Ano</p>   
-                        <p>Diretores</p>  
+                        <p>Tempo</p>
+                        <p>Ano</p>
+                        <p>Diretores</p>
                         <p>Elenco</p>
-                        <p>TEmporadas   X    Episodios Y</p>
-                    </br>                
+                        <p>TEmporadas X Episodios Y</p>
+                        </br>
                         <button class="btn-adcionar">Adicionar à Lista</button>
-                    </section>            
+                    </section>
                 </section>
                 <section class="container-recomendado">
                     <div class="bloco-recomendado">
                         <section>
                             <img src="#" alt="Imagem 1">
-                        </section>                  
+                        </section>
                     </div>
                     <section class="bloco_recomendado_sinopse">
                         <h1>Nome da série</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam, quis nostrud exercitation</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation</p>
                         <p>Genêro</p>
-                        <p>Tempo</p>  
-                        <p>Ano</p>   
-                        <p>Diretores</p>  
+                        <p>Tempo</p>
+                        <p>Ano</p>
+                        <p>Diretores</p>
                         <p>Elenco</p>
-                        <p>TEmporadas   X    Episodios Y</p>
-                        </br>                
+                        <p>TEmporadas X Episodios Y</p>
+                        </br>
                         <button class="btn-adcionar">Adicionar à Lista</button>
-                    </section>            
+                    </section>
                 </section>
                 <section class="container-recomendado">
                     <div class="bloco-recomendado">
                         <section>
                             <img src="#" alt="Imagem 1">
-                        </section>                  
+                        </section>
                     </div>
                     <section class="bloco_recomendado_sinopse">
                         <h1>Nome da série</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam, quis nostrud exercitation</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation</p>
                         <p>Genêro</p>
-                        <p>Tempo</p>  
-                        <p>Ano</p>   
-                        <p>Diretores</p>  
+                        <p>Tempo</p>
+                        <p>Ano</p>
+                        <p>Diretores</p>
                         <p>Elenco</p>
-                        <p>TEmporadas   X    Episodios Y</p>
-                        </br>                
+                        <p>TEmporadas X Episodios Y</p>
+                        </br>
                         <button class="btn-adcionar">Adicionar à Lista</button>
-                    </section>            
+                    </section>
                 </section>
-                
+
             </section>
         </section>
     </main>
@@ -315,4 +317,5 @@
     </Footer>
     <script src="./javascript/js.js"></script>
 </body>
+
 </html>
