@@ -26,4 +26,9 @@ loginOverlay.addEventListener('click', (e) => {
     if (e.target === loginOverlay) {
       loginOverlay.style.display = 'none';
     }
-  });
+});
+  
+
+
+/* funçao menu mobile */
+

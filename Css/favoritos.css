@@ -63,12 +63,13 @@ body{
 }
 
 .btn_icon_header{
-	background: transparent;
+    background: transparent;
 	border: none;
 	color: #ffff;
 	cursor: pointer;
 	display: none;
 }
+
 
 .login_button_header a{
 	color: #ffff;
@@ -76,6 +77,7 @@ body{
 	font-weight: 400;
 	font-size: 1.1rem;
 	padding-bottom: 2%;
+    display: none;
 }
 
 .fa {
@@ -205,3 +207,5 @@ button {
 	from {margin-right: 100vw;}
 	to {margin-left: 0vw;}
 }
+
+
