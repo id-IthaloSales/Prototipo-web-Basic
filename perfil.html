@@ -13,23 +13,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <!--JavaScript-->
   <script src="./javascript/js.js"></script>
-  <title>Cadastro</title>
+  <title>Perfil</title>
 </head>
 
 <body>
-  <!--codigo para abertura da tela cadastro confirmado-->
-  <div id="cadconfirma-overlay">
-    <div id="confirma-box">
-      <h2>Enviamos um pedido de confirmação para o seu e-mail.
-        Este procedimento de verificação é importante para
-        garantir a segurança dos seus dados.</h2>
-      <div class="bttconfirma">
-        <a href="#">Não recebeu o e-mail?</a><br>
-        <a href="#" style="color: #F9A400;">Reenviar Email</a><br>
-        <a href="./index.html"><button style="background-color:#007bff;">Inicio</button></a>
-      </div>
-    </div>
-  </div>
   <!--codigo para abertura da tela loguin-->
   <div id="login-overlay">
     <div id="login-box">
@@ -55,7 +42,6 @@
 
     </div>
   </div>
-
   <!--Incio do body-->
   <header class="header">
     <div class="logo">
@@ -76,29 +62,22 @@
     </nav>
   </header>
   <main>
-    <section class="conteiner-cadastro, container">
-      <h1>CADASTRE-SE</h1>
-      <form id="cadastro-form">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        <br>
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" id="sobrenome" name="sobrenome" required>
-        <br>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required>
-        <br>
-        <label for="senha">Confirmar senha:</label>
-        <input type="password" id="senha" name="senha" required>
-        <br>
-        <label for="senha">Telefone:</label>
-        <input type="number" id="telefone" name="telefone" required>
-
-        <button id="bttcadastrar" type="submit">Cadastrar</button>
-      </form>
+    <section class="conteiner-perfil">
+        <div class="box-usuario">
+            <h1>Perfil</h1><br>
+            <a href="./favoritos.html">Minha Lista</a><br>
+            <a href="./favoritos.html">Favoritos</a><br>
+            <a href="./favoritos.html">Assistidos</a><br>
+            <a href="./telapesquisa.html">Plataforma</a><br>
+            <a href="./telapesquisa.html">Gêneros</a><br>
+        </div>
+        
+    <section class="conteiner avatar">
+        <figure>
+            <img src="./imagens/Perfil/avatar.svg" alt="Imagem do usuario">
+            <figcaption>Nome do usuário </figcaption>
+        </figure>
+    </section>
     </section>
   </main>
   <Footer>
@@ -108,7 +87,7 @@
         <li><a href="./telapesquisa.html">GÊNEROS</a></li>
         <li><a href="./favoritos.html">FAVORITOS</a></li>
         <li><a href="./telapesquisa.html">PLATAFORMAS</a></li>
-        <li><a href="#">PERFIL</a></li>
+        <li><a href="./perfil.html">PERFIL</a></li>
       </ul>
     </nav>
     <a href="#">FAQ </a>
