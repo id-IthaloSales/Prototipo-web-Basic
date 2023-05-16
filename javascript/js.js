@@ -27,3 +27,17 @@ loginOverlay.addEventListener('click', (e) => {
       loginOverlay.style.display = 'none';
     }
   });
+
+/*função tela confirma cadastro */
+var varbttcadastrar = document.getElementById('bttcadastrar');
+var cadconfirmaoverlay = document.getElementById('cadconfirma-overlay');
+
+varbttcadastrar.addEventListener('click', function () {
+  cadconfirmaoverlay.style.display = 'block';
+});
+
+cadconfirmaoverlay.addEventListener('click', (e) => {
+    if (e.target === cadconfirmaoverlay) {
+      cadconfirmaoverlay.style.display = 'none';
+    }
+  });
