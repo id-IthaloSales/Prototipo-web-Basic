@@ -1,6 +1,7 @@
 main .container-recomendado {
   display: inline-flex;
   align-items: center;
+  color: #f2f2f2;
 }
 
 .form-pesquisar {
