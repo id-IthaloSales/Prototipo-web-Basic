@@ -14,10 +14,13 @@
     <!--Icons-->
     <script src="https://kit.fontawesome.com/d1288213de.js" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <title>Tela de pesquisa</title>
+    <!--JavaScript-->
+    <script src="./javascript/js.js"></script>
+    <title>Stream List</title>
 </head>
 
 <body>
+    <!--codigo para abertura da tela loguin-->
     <div id="login-overlay">
         <div id="login-box">
             <h2>Login</h2>
@@ -42,6 +45,7 @@
 
         </div>
     </div>
+    <!--Incio do body-->
     <div class="header" id="header">
         <button onclick="toggleSidebar()" class="btn_icon_header">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -64,7 +68,11 @@
         </div>
 
         <div class="login_button_header">
-                <a href="#" id="open-login-btn"><i class="fa fa-sign-in-alt"></i>ENTRAR</a>
+
+                <a href="#" id="open-login-btn">
+                <i  class="fa fa-sign-in-alt"></i>ENTRAR
+                </a>	
+
         </div>
 
     </div>
@@ -77,76 +85,40 @@
                 </div>
             </form>
         </section>
-        <section class="container-filterpesquisar">
-            <section class="conteiner-bttplataforma">
-                <button class="botao" onclick="toggleLista('listplataforma')">PLATAFORMA</button>
-                <ul id="listplataforma" class="lista">
-                    <li><a href="#"><img src="./imagens/icons_Plataformas/netflix.jpg" alt="Netflix"></a></li>
-                    <li><a href="#"><img src="./imagens/icons_Plataformas/AmazonPrime.jpg" alt="Amazon"></a></li>
-                    <li><a href="#"><img src="./imagens/icons_Plataformas/GloboPlay.jpg" alt="GloboPlay"></a></li>
-                    <li><a href="#"><img src="./imagens/icons_Plataformas/Starplus.jpg" alt="Starplus"></a></li>
-                    <li><a href="#"><img src="./imagens/icons_Plataformas/AppleTV.jpg" alt="AppleTV"></a></li>
-                    <li><a href="#"><img src="./imagens/icons_Plataformas/Disney.jpg" alt="Disney"></a></li>
-                    <li><a href="#"><img src="./imagens/icons_Plataformas/HboMax.jpg" alt="HboMax"></a></li>
-                    <li><a href="#"><img src="./imagens/icons_Plataformas/Crunchroll.jpg" alt="Crunchroll"></a></li>
-                </ul>
-            </section>
-            <section class="conteiner-bttgenero">
-                <button class="botao" onclick="toggleLista('listgenero')">GÊNERO</button>
-                <ul id="listgenero" class="lista">
-                    <li><a href="#">Ação</a></li>
-                    <li><a href="#">Animação</a></li>
-                    <li><a href="#">Aventura</a></li>
-                    <li><a href="#">Biografia</a></li>
-                    <li><a href="#">comédia</a></li>
-                    <li><a href="#">Crime</a></li>
-                    <li><a href="#">Documentário</a></li>
-                    <li><a href="#">Drama</a></li>
-                    <li><a href="#">Esporte</a></li>
-                    <li><a href="#">Família</a></li>
-                    <li><a href="#">Fantasia</a></li>
-                    <li><a href="#">Faroeste</a></li>
-                    <li><a href="#">Ficção científica</a></li>
-                    <li><a href="#">Guerra</a></li>
-                    <li><a href="#">História</a></li>
-                    <li><a href="#">Mistério</a></li>
-                    <li><a href="#">Música</a></li>
-                    <li><a href="#">Musical</a></li>
-                    <li><a href="#">Romance</a></li>
-                    <li><a href="#">Show</a></li>
-                    <li><a href="#">Terror</a></li>
-                    <li><a href="#">Thriller</a></li>
-
-                </ul>
-            </section>
-        </section>
-        <section class="container-resultadofilter">
-            <h1>Nome da PLATAFORMA OU GÊNERO</h1>
-            <br><br><br>
-            <section class="box-resultado, bloco-list">
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-            </section>
-
-        </section>
+        <h1>Favoritos / Minha lista / Assistidos / Lançamentos</h1>
+        <br>
+        <br>
+        <section class="container-favoritos, bloco-list">
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
     </main>
     <footer>
         <div id="footer_content">
@@ -206,7 +178,6 @@
             2023 all rights reserved
         </div>
     </footer>
-      <!--JavaScript-->
     <script src="./javascript/menumobile.js"></script>
     <script src="./javascript/js.js"></script>
 </body>

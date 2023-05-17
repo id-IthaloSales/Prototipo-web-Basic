@@ -46,25 +46,36 @@
         </div>
     </div>
     <!--Incio do body-->
-    <header class="header">
-        <div class="logo">
-            <img src="./imagens/logo.png" alt="Logomarca">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="./imagens/logo.png" alt="Logo" class="img_logo_header">
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./telapesquisa.html">GÊNEROS</a></li>
-                <li><a href="./favoritos.html">FAVORITOS</a></li>
-                <li><a href="./telapesquisa.html">PLATAFORMAS</a></li>
-                <li class="menuEntrarSair">
-                    <a href="#">
-                        <i id="open-login-btn" class="fa fa-sign-in-alt"> Entrar</i>
-                        
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="./index.html" class="active">INICIO</a>
+            <a href="./telapesquisa.html">GÊNEROS</a>
+            <a href="./telalistas.html">FAVORITOS</a>
+            <a href="./telapesquisa.html">PLATAFORMAS</a>
+        </div>
+
+        <div class="login_button_header">
+
+                <a href="#" id="open-login-btn">
+                <i  class="fa fa-sign-in-alt"></i>ENTRAR
+                </a>	
+
+        </div>
+
+    </div>
     <main>
         <section class="container-pesquisar">
             <form>
@@ -324,20 +335,21 @@
             <ul class="footer-list">
 
                 <li>
-                    <a href="#" class="footer-link">INICIO</a>
+                    <a href="./index.html" class="footer-link">INICIO</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">GÊNERO</a>
+                    <a href="./telapesquisa.html" class="footer-link">GÊNERO</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">FAVORITOS</a>
+                    <a href="./telalistas.html" class="footer-link">FAVORITOS</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">PLATAFORMAS</a>
+                    <a href="./telapesquisa.html" class="footer-link">PLATAFORMAS</a>
                 </li>
                 <li>
                     <a href="./perfil.html" class="footer-link">PERFIL</a>
                 </li>
+
             </ul>
             <div id="footer_subscribe">
                 <h3>Subscribe</h3>
