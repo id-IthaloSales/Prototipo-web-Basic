@@ -13,8 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <!--JavaScript-->
   <script src="./javascript/js.js"></script>
-  <script src="AddCapa.js"></script>
-  <title>Adicionar Serie</title>
+  <title>Adicionar Filme</title>
 </head>
 
 <body>
@@ -77,14 +76,14 @@
   <main>
     <section class="conteiner-perfil">
         <div class="box-usuario">
-            <h1>Adicionar Serie: </h1><br>
+            <h1>Adicionar Filme: </h1><br>
             <form>
 			 <label for="Nome">Nome:</label>
                 <input type="text" id="Nome" name="Nome" required><br> 
                 <label for="genero">Gênero:</label>
-                <input type="text" id="gênero" name="gênero" required><br>              
-                <label for="tempo">Duração de episódio:</label>
-                <input type="text" id="tempo" name="tempo" required><br>              
+                <input type="text" id="genero" name="genero" required><br>              
+                <label for="duração">Duração:</label>
+                <input type="text" id="duração" name="duração" required><br>              
                 <label for="ano">Ano de Lançamento:</label>
                 <input type="number" id="ano" name="ano" required><br>              
                 <label for="sinopse">Sinopse:</label>
@@ -93,14 +92,10 @@
                 <input type="text" id="diretor" name="diretor" required><br>              
                 <label for="elenco">Elenco:</label>
                 <input type="text" id="elenco" name="elenco" required><br>              
-                <label for="temporadas">Temporadas:</label>
-                <input type="number" id="temporadas" name="temporadas19:27 22/05/2023" required><br>              
-                <label for="episodios">Episódios:</label>
-                <input type="number" id="episodios" name="episodios" required><br>              
                 <label for="trailer">Trailer:</label>
                 <input type="url" id="trailer" name="trailer" required><br>              
                 <label for="ondeAssistir">Onde Assistir?</label>
-                <input type="text" id="ondeAssistir" name="ondeAssistir" required><br>                            
+                <input type="text" id="ondeAssistir" name="ondeAssistir" required><br>              
                 <label for="preview">Escolha uma imagem:</label>
             <input type="file" id="preview" name="preview" accept="image/*">
                 <input id="bttloguin" type="submit" value="Adicionar">
@@ -135,7 +130,6 @@
           });
         </script>
     
-
     </section>
     </section>
   </main>
