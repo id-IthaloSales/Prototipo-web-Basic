@@ -1,10 +1,12 @@
 main .container-recomendado {
+  
   display: inline-flex;
   align-items: center;
   color: #f2f2f2;
 }
 
 .form-pesquisar {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,8 +37,8 @@ main .container-recomendado {
   align-items: center;
   justify-content: center;
   
-  background-color: #007bff;
-  border: #007bff;
+  background-color: #ffffff;
+  border: #ffffff;
   border-radius: 15px;
   height: 45PX;
   width: 360px;
@@ -64,21 +66,27 @@ main .container-recomendado {
 .container-principal {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  
 }
 
 .container { /* Ajusta o container */
  
+  
   position: relative;
   display: inline-block;
   margin-right: 50px;
   margin-top: 50px;
-  margin-left: 10px;
+  margin-left: 0px;
   align-items: left;
   justify-content: left;
+  
+
+  
 }
 
 .container-margin {
   margin-top: 50px;
+  
 }
 
 input[type="text"] {
@@ -101,10 +109,21 @@ input[type="text"] {
 }
 
 .bloco-list>section {
+  /*display: inline-block;
+    margin-right: 50px;
+    margin-top: 50px
+px
+;
+    margin-left: 10px;*/
+  
   background-color: #f2f2f2;
-  padding: 20px;
-  height: 100px;
-  width: 100px;
+  display: inline-block;
+    margin-right: 0px;
+    margin-top: 50px;
+    margin-left: 25px;
+
+  height: 300px;
+  width: 200px;
   text-align: center;
 }
 
@@ -165,6 +184,7 @@ h1 {
   text-align: left;
   margin-left: 7%;
   margin-bottom: 2%;
+
 }
 
 .container-gridcaract h4,
@@ -189,6 +209,7 @@ h5 {
   width: 600px;
   height: 300px;
   background-color: #000000;
+  border-radius: 10px;
   border: 5px;
   color: transparent;
 }
@@ -196,8 +217,12 @@ h5 {
 .container-gridopcoes {
   width: 300px;
   height: 300px;
-  background-color: #240cb0;
-  border: 5px;
+  background: #070B14
+
+
+
+  ;
+  border-radius: 10px;
   
   text-align: center;  
 }
@@ -229,9 +254,11 @@ h5 {
 /*Codigos css especificos da pagina TelaSerie*/
 
 .container-filterpesquisar {
+  
   display: inline-flex;
   gap: 10px;
   margin: auto;
+  
 }
 
 .conteiner-bttgenero {
@@ -274,6 +301,7 @@ h5 {
 
 }*/
 .box-resultado {
+  margin-left: 20px;
   width: 300px;
   height: 1000px;
 
@@ -388,13 +416,14 @@ main figure{
     background-color: #45a049;
   }
 
-  .Container-capa{
+  .Container-capa {
    position: relative;
    top: 200px;
     width: 400px;
     height: 600px;
     background-color: #ffffff;
-    border: 0px;
+    border-radius: 10px; 
+   
 
     color:#000000;
   }
@@ -403,9 +432,19 @@ main figure{
     width: 400px;
     height: 600px;
     overflow: hidden;
+    border-radius: 10px; 
   }
   
   #preview-image {
     width: 100%;
     height: 100%;
+    border-radius: 10px; 
+  }
+
+  .list-23 label {
+    color: rgb(252, 253, 252);
+
+  }
+  #preview {
+    color: #584FC4;
   }
